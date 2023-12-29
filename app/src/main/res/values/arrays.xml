@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="items">
+        <item>Document | Books</item>
+        <item>Clothes | Accessories</item>
+        <item>Food | Flowers</item>
+        <item>Household Items</item>
+        <item>Sports and Other Equipment </item>
+        <item>Electronic Items </item>
+    </array>
+</resources>

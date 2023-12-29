@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ItemViewLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="0dp">
+
+    <RelativeLayout
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/itemImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_foreground" />
+
+    <TextView
+        android:fontFamily="@font/coustard"
+        android:id="@+id/itemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="0dp"
+        android:hint=""
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@+id/itemImage"
+        android:textSize="12dp" />
+
+
+
+        <TextView
+        android:fontFamily="@font/coustard"
+        android:textColor="@color/black"
+        android:id="@+id/item_qty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/itemImage"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:ellipsize="marquee"
+        android:hint=""
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true" />
+
+    <TextView
+        android:fontFamily="@font/coustard"
+        android:textColor="@color/black"
+        android:id="@+id/itemTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/itemImage"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:hint="" />
+    </RelativeLayout>
+</RelativeLayout>

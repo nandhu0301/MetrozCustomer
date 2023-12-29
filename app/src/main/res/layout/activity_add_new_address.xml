@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_alignParentBottom="true"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/header_lay"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:layout_margin="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_baseline_arrow_back_24"
+            android:backgroundTint="@color/black"
+            android:id="@+id/backtoaddress"
+            />
+        <TextView
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:layout_gravity="center"
+            android:text="Add new Address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_below="@+id/header_lay"
+        android:overScrollMode="never"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="80dp"
+        android:scrollbarSize="0dp">
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:background="@color/white"
+                        android:layout_margin="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+<LinearLayout
+    android:id="@+id/linearlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <ImageView
+
+     android:layout_gravity="center_vertical"
+        android:src="@drawable/red_location"
+        android:layout_width="30dp"
+        android:layout_height="30dp"></ImageView>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:padding="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="0dp"
+                        android:inputType="textPersonName">
+
+                        <EditText
+
+                            android:id="@+id/pickCurrentLocationTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:hint="Pick Current Location "
+                            android:clickable="true"
+                            android:editable="false"
+                            android:focusable="false"
+                            android:textColor="#000000"
+                            android:textSize="15dp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                      <!--  <ImageView
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/ic_cus"
+                            />-->
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/shippingnameTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="0dp"
+                        android:inputType="textPersonName">
+
+                        <EditText
+                            android:importantForAutofill="no"
+                            android:id="@+id/shippingName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:hint="Name* "
+                            android:inputType="textFilter|textPersonName|textNoSuggestions"
+                            android:maxLength="25"
+                            android:textColor="#000000"
+                            android:textSize="15dp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/shippingMobileNumberTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:inputType="textVisiblePassword|textFilter|textPersonName">
+
+                        <EditText
+                            android:importantForAutofill="no"
+                            android:id="@+id/shippingMobileNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:hint="10-digit mobile number* "
+                            android:inputType="textVisiblePassword|textFilter|number"
+                            android:digits="0123456789"
+                            android:maxLength="10"
+                            android:textColor="#000000"
+                            android:textSize="15dp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+<!--
+
+                    <ImageView
+
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_phonenumicon_01"
+                        />
+-->
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/shippingAlternatePhoneNumberTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:inputType="textPersonName">
+
+                        <EditText
+                            android:importantForAutofill="no"
+                            android:id="@+id/shippingAlternatePhoneNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:hint="Alternate Phone number(Optional) "
+                            android:inputType="textFilter|phone|textNoSuggestions"
+                            android:maxLength="10"
+                            android:textColor="#000000"
+                            android:textSize="15dp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/shippingHousenumberTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:inputType="textPersonName">
+
+                        <EditText
+                            android:importantForAutofill="no"
+                            android:id="@+id/shippingHousenumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:hint="House No,Building Name*"
+                            android:inputType="textFilter|textPersonName|textNoSuggestions"
+                            android:textColor="#000000"
+                            android:textSize="15dp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/ShippingAreaTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:inputType="textPersonName">
+
+                        <EditText
+                            android:importantForAutofill="no"
+                            android:id="@+id/ShippingArea"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:hint="Road Name,Area,Colony*"
+                            android:inputType="textFilter|textPersonName|textNoSuggestions"
+                            android:textColor="#000000"
+                            android:textSize="12dp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/ShippingCityTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:inputType="textPersonName">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/ShippingCity"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="200dp"
+                            android:hint="City*"
+                            android:editable="false"
+                            android:clickable="true"
+                            android:textColor="#000000"
+                            android:textSize="12dp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/ShippingStateTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:inputType="textPersonName">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/ShippingState"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="220dp"
+                            android:layout_marginRight="5dp"
+                            android:hint="State*"
+                            android:editable="false"
+                            android:clickable="true"
+                            android:textColor="#000000"
+                            android:textSize="12dp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/shippingpincodeTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:inputType="textPersonName">
+
+                        <EditText
+                            android:importantForAutofill="no"
+                            android:id="@+id/shippingpincode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:hint="Pincode*"
+                            android:enabled="false"
+                            android:focusable="false"
+                            android:inputType="textFilter|phone|textNoSuggestions"
+                            android:maxLength="6"
+                            android:textColor="#000000"
+                            android:textSize="15dp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/shippinglandmarkTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:inputType="textPersonName">
+
+                        <EditText
+                            android:importantForAutofill="no"
+                            android:id="@+id/shippinglandmark"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:hint="Landmark(Optional)"
+                            android:inputType="textFilter|textPersonName|textNoSuggestions"
+                            android:textColor="#000000"
+                            android:textSize="15dp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="25dp"
+                        android:inputType="textPersonName"
+                        android:text="Address Type" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:paddingBottom="80dp"
+                    android:orientation="horizontal">
+
+                    <RadioGroup
+                        android:id="@+id/groupradio"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/shippingHomeAddress"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:text="Home Address"
+                            android:textSize="15dp" />
+
+                        <RadioButton
+                            android:id="@+id/shippingOfficeAddress"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:text="Work/Office Address"
+                            android:textSize="15dp" />
+                    </RadioGroup>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="60dp"
+        android:id="@+id/SaveShippingAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cyanbase"
+        android:foregroundGravity="bottom"
+        android:gravity="center|center_vertical"
+        android:layout_alignParentBottom="true"
+        android:text="Save Address"
+        android:textColor="@color/white"
+        android:textSize="15dp"></Button>
+
+</RelativeLayout>

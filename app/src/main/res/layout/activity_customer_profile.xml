@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerProfileActivity">
+
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/flat_border">
+
+        <ImageView
+            android:layout_margin="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:id="@+id/backto_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_baseline_arrow_back_24"
+            android:backgroundTint="@color/black"
+            />
+
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:layout_gravity="center_vertical"
+            android:text="My Profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <LinearLayout
+
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginTop="13dp"
+                    android:src="@drawable/ic_logout_filled"
+                    android:layout_gravity="right|center_vertical"
+                    android:gravity="right"
+                    android:id="@+id/logout"
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:scrollbarSize="0dp"
+        android:overScrollMode="never"
+        android:layout_below="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_margin="10dp"
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_centerInParent="true"
+                android:id="@+id/animation"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="false"
+                app:lottie_repeatMode="restart"
+                app:lottie_rawRes="@raw/customerprofile"/>
+
+            <RelativeLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:inputType="textPersonName"
+
+
+                    >
+
+                    <TextView
+
+                        android:focusable="false"
+                        android:enabled="false"
+                        android:textColor="@color/black"
+                        android:id="@+id/customername"
+                        android:drawablePadding="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Full Name "
+                        android:inputType="textPersonName"
+                        android:textSize="14dp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:inputType="textPersonName">
+
+                    <TextView
+                        android:focusable="false"
+                        android:enabled="false"
+                        android:textColor="@color/black"
+                        android:id="@+id/customernumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Phone Number "
+                        android:inputType="phone"
+                        android:drawablePadding="5dp"
+                        android:textSize="14dp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:inputType="textPersonName"
+
+
+                    >
+
+                    <TextView
+                        android:focusable="false"
+                        android:enabled="false"
+                        android:textColor="@color/black"
+                        android:id="@+id/customeremail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint=" email"
+                        android:drawablePadding="5dp"
+                        android:inputType="textEmailAddress"
+
+
+                        android:textSize="14dp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:focusable="false"
+                    android:enabled="false"
+                    android:textColor="@color/black"
+                    android:id="@+id/cutomerAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Address "
+                    android:drawablePadding="5dp"
+                    android:ellipsize="end"
+                    android:maxLines="4"
+                    android:inputType="textMultiLine"
+                    android:singleLine="false"
+                    android:textSize="14dp" />
+
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/black"
+
+
+                    >
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                >
+
+                <RelativeLayout
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true">
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+
+                            <LinearLayout
+                                android:layout_margin="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_margin="4dp"
+                                    android:textSize="15dp"
+                                    android:textColor="@color/black"
+                                    android:paddingLeft="0dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Contact Support"/>
+
+                                <LinearLayout
+                                    android:paddingLeft="5dp"
+                                    android:layout_margin="3dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <ImageView
+                                            android:id="@+id/img"
+                                            android:src="@drawable/ic_landlineicon"
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"/>
+                                        <TextView
+                                            android:layout_toRightOf="@+id/img"
+                                            android:textSize="14dp"
+                                            android:textColor="@color/black"
+                                            android:id="@+id/landlinetext"
+                                            android:layout_marginLeft="29dp"
+                                            android:text="Landline"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"/>
+                                        <TextView
+
+                                            android:textSize="14dp"
+                                            android:autoLink="phone"
+                                            android:paddingLeft="150dp"
+                                            android:text="@string/landline"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentRight="true"/>
+
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:paddingLeft="5dp"
+                                    android:layout_margin="3dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                        <ImageView
+                                            android:id="@+id/img1"
+                                            android:src="@drawable/ic_whatsappicon"
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"/>
+                                        <TextView
+                                            android:textSize="14dp"
+                                            android:textColor="@color/black"
+                                            android:id="@+id/watsapptext"
+                                            android:layout_marginLeft="29dp"
+                                            android:text="Whats App"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"/>
+                                        <TextView
+                                            android:textColor="@color/cyanbase"
+                                            android:id="@+id/whatsapptext"
+                                            android:textSize="14dp"
+                                            android:paddingLeft="150dp"
+                                            android:text="@string/whatsapp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentRight="true"/>
+
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:paddingLeft="5dp"
+                                    android:layout_margin="3dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                        <ImageView
+
+                                            android:id="@+id/img2"
+                                            android:src="@drawable/ic_websiteicon"
+                                            android:layout_width="17dp"
+                                            android:layout_height="17dp"/>
+                                        <TextView
+                                            android:layout_marginLeft="29dp"
+                                            android:textSize="14dp"
+                                            android:textColor="@color/black"
+                                            android:id="@+id/websitetext"
+                                            android:text="Website"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"/>
+                                        <TextView
+                                            android:autoLink="web"
+                                            android:textSize="12dp"
+                                            android:textColor="@color/black"
+                                            android:paddingLeft="150dp"
+                                            android:text="@string/website"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentRight="true"/>
+
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:paddingLeft="5dp"
+                                    android:layout_margin="3dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <ImageView
+                                            android:id="@+id/img3"
+                                            android:src="@drawable/ic_sellericon"
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"/>
+                                        <TextView
+                                            android:layout_marginLeft="29dp"
+                                            android:layout_toRightOf="@+id/img3"
+                                            android:textSize="14dp"
+                                            android:id="@+id/sellertext"
+                                            android:textColor="@color/black"
+                                            android:text="Seller"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"/>
+                                        <TextView
+
+                                            android:textSize="14dp"
+                                            android:paddingLeft="150dp"
+                                            android:text="Metroz"
+                                            android:textColor="@color/black"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentRight="true"/>
+
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    >
+                                    <TextView
+                                        android:layout_margin="5dp"
+                                        android:textColor="@color/red_btn_bg_color"
+                                        android:textSize="14dp"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Powered by Smiligence"/>
+                                </androidx.cardview.widget.CardView>
+
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+
+
+
+                    </LinearLayout>
+
+
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ItemViewLayout"
+    android:layout_width="200dp"
+
+    android:layout_height="190dp"
+    android:layout_centerHorizontal="true"
+    android:layout_margin="5dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginTop="15dp"
+    android:elevation="20dp">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/itemImage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_launcher_foreground" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:gravity="right"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:visibility="invisible"
+                    android:id="@+id/wishlisttrue"
+                    android:layout_gravity="right"
+                    android:background="#ED2828"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+
+                <Button
+                    android:visibility="visible"
+                    android:id="@+id/wishlistfalse"
+                    android:layout_gravity="right"
+                    android:background="#28ED60"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@+id/storeimage"
+
+            android:orientation="vertical">
+
+
+
+            <TextView
+
+                android:id="@+id/itemname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_margin="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="6dp"
+                android:ellipsize="marquee"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:hint="item name"
+                android:marqueeRepeatLimit="marquee_forever"
+
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:id="@+id/itemprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+
+                    android:layout_margin="3dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="6dp"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+
+                    android:hint="item price"
+                    android:marqueeRepeatLimit="marquee_forever"
+
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:id="@+id/itemqty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+
+                    android:layout_margin="3dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="6dp"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+
+                    android:hint="item qty"
+                    android:marqueeRepeatLimit="marquee_forever"
+
+                    />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_gravity="right"
+                    android:layout_margin="3dp">
+
+                    <include layout="@layout/increase_quantity" />
+
+                    <include layout="@layout/add_button" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+

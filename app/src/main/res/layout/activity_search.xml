@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="5dp">
+
+            <SearchView
+
+
+                android:id="@+id/searchbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:queryHint="Search" />
+        </androidx.cardview.widget.CardView>
+
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs_add_sales"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:splitMotionEvents="true"
+            app:tabGravity="fill"
+            app:tabInlineLabel="true"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/black"
+            app:tabTextAppearance="@style/TabLayoutStyle"
+            app:tabTextColor="@color/cyanbase">
+
+
+            <com.google.android.material.tabs.TabItem
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Items"
+                app:tabTextAppearance="@style/TabLayoutStyle"
+                android:layout="@layout/notification_items_count">
+
+
+            </com.google.android.material.tabs.TabItem>
+
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="stores"
+                app:tabTextAppearance="@style/TabLayoutStyle"
+                android:layout="@layout/notification_store_icon">
+
+
+            </com.google.android.material.tabs.TabItem>
+
+
+        </com.google.android.material.tabs.TabLayout>
+
+
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/itemListView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="60dp" />
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/storeNameList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="60dp" />
+                </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        app:itemIconSize="25dp"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemTextColor="@drawable/item_selector"
+        app:menu="@menu/bottom_nav_menu" />
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="8dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="8dp"
+    android:orientation="vertical"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        style="@style/loginHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/loginViewsMargin"
+        android:text="Forget Password"
+        android:textSize="25dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputEmail"
+        style="@style/parent"
+        android:layout_marginTop="@dimen/loginViewsMargin">
+
+        <EditText
+            android:id="@+id/registeredmobilenumber"
+            style="@style/modifiedEditText"
+            android:hint="Enter Your Registered PhoneNumber"
+            android:inputType="phone"
+            android:drawableLeft="@drawable/ic_phonenumicon_01"
+            android:drawablePadding="10dp"
+            android:maxLength="10"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputPassword"
+        style="@style/parent"
+        android:layout_marginTop="@dimen/loginViewsMargin">
+
+        <EditText
+            android:id="@+id/otp"
+            style="@style/modifiedEditText"
+            android:hint="Enter OTP"
+            android:drawableLeft="@drawable/ic_otpicon_01"
+            android:drawablePadding="10dp"
+            android:maxLength="6"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+        android:layout_below="@+id/group_login"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/getotp"
+            style="@style/loginButton"
+            android:layout_gravity="right"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:layout_marginRight="5dp"
+            android:text="Get OTP" />
+
+        <Button
+            android:id="@+id/verifyotp"
+            style="@style/loginButton"
+            android:text="Verify OTP"
+            android:visibility="invisible"
+            android:layout_gravity="right"
+            android:layout_marginTop="@dimen/loginViewsMargin" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/parent"
+        android:id="@+id/gotologinpage"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/primaryTextColor"
+        android:text="Go to Login"
+        android:layout_marginTop="@dimen/loginViewsMargin" />
+
+    <TextView
+        style="@style/parent"
+        android:id="@+id/resendotp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/primaryTextColor"
+        android:text=""
+        android:layout_marginTop="@dimen/loginViewsMargin" />
+
+
+</LinearLayout>

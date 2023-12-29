@@ -1,0 +1,159 @@
+{
+  "project_info": {
+    "project_number": "1004319711732",
+    "firebase_url": "https://metrozprojects-b2a42-default-rtdb.firebaseio.com",
+    "project_id": "metrozprojects-b2a42",
+    "storage_bucket": "metrozprojects-b2a42.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1004319711732:android:79b857bbd0737cd13499a1",
+        "android_client_info": {
+          "package_name": "com.smiligenceUAT1.metrozadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1004319711732-cvdp4s29s87e23b3u56rgcgui5r3huq6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.smiligenceUAT1.metrozadmin",
+            "certificate_hash": "f83fce6065ea7e87c6273eb2fc0dd3d0f54deed1"
+          }
+        },
+        {
+          "client_id": "1004319711732-52sug3bbpni584b73s56jtrne1el27um.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiXwKCPhCcXeyQAGzYC5oU6oRA5c29Y2Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1004319711732-52sug3bbpni584b73s56jtrne1el27um.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1004319711732:android:37c0331c4a3877033499a1",
+        "android_client_info": {
+          "package_name": "com.smiligenceUAT1.metrozcustomer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1004319711732-daftf7iej97lni3uk2eftb9nhdr68f2d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.smiligenceUAT1.metrozcustomer",
+            "certificate_hash": "f83fce6065ea7e87c6273eb2fc0dd3d0f54deed1"
+          }
+        },
+        {
+          "client_id": "1004319711732-52sug3bbpni584b73s56jtrne1el27um.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiXwKCPhCcXeyQAGzYC5oU6oRA5c29Y2Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1004319711732-52sug3bbpni584b73s56jtrne1el27um.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1004319711732:android:d78c364aa973bf433499a1",
+        "android_client_info": {
+          "package_name": "com.smiligenceUAT1.metrozdeliveryappnew"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1004319711732-4v2kbaveb60s6c128lanj2tggqo7a2s1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.smiligenceUAT1.metrozdeliveryappnew",
+            "certificate_hash": "f83fce6065ea7e87c6273eb2fc0dd3d0f54deed1"
+          }
+        },
+        {
+          "client_id": "1004319711732-52sug3bbpni584b73s56jtrne1el27um.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiXwKCPhCcXeyQAGzYC5oU6oRA5c29Y2Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1004319711732-52sug3bbpni584b73s56jtrne1el27um.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1004319711732:android:a93bf1257eecff963499a1",
+        "android_client_info": {
+          "package_name": "com.smiligenceUAT1.metrozsellerpartner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1004319711732-ounmv526ogp077kmksji6flt4i61j99m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.smiligenceUAT1.metrozsellerpartner",
+            "certificate_hash": "f83fce6065ea7e87c6273eb2fc0dd3d0f54deed1"
+          }
+        },
+        {
+          "client_id": "1004319711732-52sug3bbpni584b73s56jtrne1el27um.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiXwKCPhCcXeyQAGzYC5oU6oRA5c29Y2Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1004319711732-52sug3bbpni584b73s56jtrne1el27um.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

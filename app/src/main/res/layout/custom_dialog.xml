@@ -1,0 +1,57 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/float_transparent"
+    android:theme="@style/Translucent_NoTitle"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="350dp"
+        android:background="@color/float_transparent"
+        android:theme="@style/Translucent_NoTitle"
+        android:backgroundTint="@color/float_transparent"
+        android:layout_height="450dp"
+        android:layout_gravity="center" >
+
+        <FrameLayout
+            android:background="@color/float_transparent"
+            android:backgroundTint="@color/float_transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp" >
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="450dp"
+                android:layout_gravity="top"
+                android:background="@drawable/covid"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/textad"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|top"
+                    android:layout_marginRight="35dp"
+
+                    android:drawablePadding="5dp"
+                    android:gravity="center|center_vertical|center_horizontal"
+                    android:text="Ad:03  "
+                    android:textColor="@color/main_blue_color"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </FrameLayout>
+
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right|top"
+            android:id="@+id/cancelDialog"
+            android:contentDescription="/contentDescription"
+            android:src="@drawable/ic_outline_cancel_24" />
+    </FrameLayout>
+</FrameLayout>

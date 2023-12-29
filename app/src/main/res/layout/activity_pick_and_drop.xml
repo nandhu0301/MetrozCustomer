@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECECEC"
+    tools:context=".PickAndDropActivity">
+
+    <LinearLayout
+        android:id="@+id/pickup_header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_margin="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_baseline_arrow_back_24"
+            android:backgroundTint="@color/black"
+            android:id="@+id/backfrompickupanddrop"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:text="Pickup and Drop"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <com.smiligenceUAT1.metrozcustomer.common.CustomScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headerlay"
+        android:layout_marginTop="50dp">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ViewFlipper
+                android:id="@+id/viewFlipper"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:visibility="visible"></ViewFlipper>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="165dp"
+                android:visibility="visible"
+                app:cardBackgroundColor="@color/yellow">
+
+                <com.vinay.stepview.VerticalStepView
+
+                    android:id="@+id/vertical_step_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <include layout="@layout/pichup_drop_details" />
+            </androidx.cardview.widget.CardView>
+
+
+            <EditText
+                android:id="@+id/instrctionEdt"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/cardLayout"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFF"
+                android:drawableStart="@drawable/ic_instructionsicon"
+                android:gravity="left|center"
+                android:hint="Any instructions? Eg:Don't ring the doorbell"
+                android:state_enabled="true"
+                android:state_pressed="true"
+                android:textColor="@color/black"
+                android:textSize="12dp">
+
+            </EditText>
+
+            <RelativeLayout
+                android:id="@+id/contactDelivery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/instrctionEdt"
+                android:layout_marginTop="25dp"
+                android:background="@color/yellow"
+                android:visibility="visible">
+
+                <CheckBox
+                    android:id="@+id/nocontactdeliverycheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:checked="false"
+                    android:text="No Contact Delivery"
+                    android:textSize="15dp"
+                    />
+
+                <TextView
+                    android:id="@+id/partnerText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_below="@+id/nocontactdeliverycheckBox"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="20dp"
+                    android:text="Partner will check with you and leave the order outside your door"
+                    android:textSize="12dp">
+
+                </TextView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/otpCheck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contactDelivery"
+                android:layout_marginTop="25dp"
+                android:background="@color/yellow"
+                android:visibility="invisible">
+
+                <CheckBox
+                    android:id="@+id/OtpcheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:checked="true"
+                    android:clickable="false"
+                    android:text="Pin Verification at Delivery"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/OtpText"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_below="@+id/OtpcheckBox"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="20dp"
+                    android:text="Pin will be sent along with your order detail and you,Share the Pin with the partner after verifying the package.use partner chat/call to share the PIN to prevent contact."
+                    android:textSize="12dp">
+
+                </TextView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/paymentTips"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/otpCheck"
+                android:layout_marginTop="25dp"
+                android:background="@color/yellow"
+                android:visibility="invisible">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="left|center"
+                    android:text="   Thank your partner with tip"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/tips"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:text="This amount will be credited to the partner's tip jar"
+                    android:textSize="12dp">
+
+                </TextView>
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/tips"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="30dp"
+                    app:singleSelection="true">
+
+                </com.google.android.material.chip.ChipGroup>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/parcelweightcheck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/paymentTips"
+                android:layout_marginTop="25dp"
+                android:background="@color/yellow"
+                android:visibility="invisible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:id="@+id/selfdec"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:text="   Self Declaration" />
+
+                <CheckBox
+                    android:id="@+id/parcelweight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_below="@+id/selfdec"
+                    android:checked="false"
+                    android:text="Parcel weight less than 15 kgs"
+                    android:textSize="13dp"
+                    />
+
+
+                <CheckBox
+                    android:id="@+id/parcelinbike"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/parcelweight"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:checked="false"
+                    android:text="Parcel can be carried in bike"
+                    android:textSize="13dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/amountDetails"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@+id/parcelweightcheck"
+                android:layout_marginTop="25dp"
+                android:background="@color/white"
+                android:visibility="invisible">
+
+                <TextView
+                    android:id="@+id/paymentDetailsTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:text="Payment Details"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    />
+
+                <TextView
+                    android:id="@+id/itemTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/paymentDetailsTxt"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:text="Partner Tips "
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/tipstotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/paymentDetailsTxt"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center"
+                    android:text="₹ 0"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/partnerdeliveryfee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/itemTotal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:drawableRight="@drawable/ic_info"
+                    android:gravity="center"
+                    android:text="Partner delivery fee  "
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/partnerdeliveryfeetxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/tipstotal"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center"
+                    android:text="₹ 0"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/partnerdeliveryfee"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:text="To pay"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/totalpartnerfee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/partnerdeliveryfeetxt"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center"
+                    android:text="₹ 0"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+    </com.smiligenceUAT1.metrozcustomer.common.CustomScrollView>
+
+    <include layout="@layout/termsandconditions_layou" />
+
+
+</RelativeLayout>

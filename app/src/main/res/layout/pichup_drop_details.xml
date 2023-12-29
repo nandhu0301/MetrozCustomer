@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditText
+        android:id="@+id/pickAddressEdt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:hint="Pickup  Address"
+        android:focusable="false"
+        android:editable="false"
+        android:textSize="10dp"
+        android:clickable="true"
+        android:drawableRight="@drawable/ic_search"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:layout_marginTop="40dp">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/deliveryAddressEdt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:hint="Deivery  Address"
+        android:textSize="10dp"
+        android:editable="false"
+        android:focusable="false"
+        android:clickable="true"
+        android:textColor="@color/black"
+        android:drawableRight="@drawable/ic_search"
+        android:background="@color/white"
+        android:layout_marginTop="130dp">
+
+    </EditText>
+
+    <com.sayantan.advancedspinner.MultiSpinner
+        android:id="@+id/documentsEdt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:editable="false"
+        app:entries="@array/items"
+        android:drawableRight="@drawable/ic_baseline_keyboard_arrow_down_24"
+        android:hint="eg:Food,Documents"
+        android:textSize="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@color/white"
+        android:layout_marginTop="220dp">
+
+    </com.sayantan.advancedspinner.MultiSpinner>
+
+</RelativeLayout>

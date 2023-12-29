@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_cart"
+            />
+
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear Cart?"/>
+
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:id="@+id/conf_text"
+            android:layout_margin="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <Button
+                android:textAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
+                android:layout_alignParentLeft="true"
+                android:textSize="14dp"
+              android:id="@+id/cancel_conf"
+                android:layout_gravity="right"
+                android:background="@drawable/b_round"
+                android:text="cancel"
+
+                android:textColor="@color/white"
+                android:backgroundTint="@color/cyanbase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:textAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
+                android:textSize="14dp"
+                android:backgroundTint="@color/cyanbase"
+                android:background="@drawable/b_round"
+                android:id="@+id/clearcart_conf"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="left"
+                android:text="clear cart"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

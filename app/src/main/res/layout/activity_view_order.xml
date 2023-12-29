@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewOrderActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/orderdetails_header"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="20dp"
+                android:text="Order Details"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+
+        </LinearLayout>
+
+        <ScrollView
+            android:overScrollMode="never"
+            android:id="@+id/scrollView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="60dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/orderdetails_header">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/order_details_layout"
+                    layout="@layout/order_details_layout" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/adcard1"
+                    android:elevation="20dp"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="5dp"
+                    android:scaleType="fitXY"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent">
+
+                    <AdapterViewFlipper
+                        android:id="@+id/diwalibanners1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible">
+                    </AdapterViewFlipper>
+
+                </androidx.cardview.widget.CardView>
+                <include
+                    android:id="@+id/itemdetailslayoutheader"
+                    layout="@layout/item_details_header" />
+
+                <include
+                    android:id="@+id/itemdetailslayout"
+                    layout="@layout/item_listview_layout" />
+
+                <include
+                    android:id="@+id/payment_details"
+                    layout="@layout/payment_details" />
+                <include
+                    android:id="@+id/shipping_details_layout"
+                    layout="@layout/shipping_details_layout" />
+
+                <include
+                    android:id="@+id/cart_total_amount_layout"
+                    layout="@layout/cart_total_amount_layout" />
+
+                <include
+                    android:id="@+id/special_instructions"
+                    layout="@layout/special_instructions_layout" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        app:itemIconSize="25dp"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemTextColor="@drawable/item_selector"
+        app:menu="@menu/bottom_nav_menu" />
+</RelativeLayout>

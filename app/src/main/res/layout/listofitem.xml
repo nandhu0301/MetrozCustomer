@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginLeft="15dp"
+                android:id="@+id/money_icon"
+                android:layout_gravity="center"
+                android:layout_margin="0dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+            <ImageView
+                android:layout_marginLeft="15dp"
+                android:id="@+id/card_icon"
+                android:layout_gravity="center"
+                android:layout_margin="2dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_margin="1dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginLeft="25dp"
+                    android:id="@+id/listItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="1dp"
+                    android:paddingBottom="0dp"
+                    android:textSize="15dp" />
+
+
+                <TextView
+                    android:layout_marginRight="15dp"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/billnumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:paddingTop="1dp"
+                    android:text="6"
+                    android:paddingBottom="0dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_margin="1dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/finalbilllist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="25dp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/orderStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="25dp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginLeft="25dp"
+                android:id="@+id/timeList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_marginLeft="25dp"
+                android:id="@+id/timelistnew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp"
+                android:textSize="15dp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

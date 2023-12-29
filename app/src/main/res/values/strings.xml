@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">MetrozUAT</string>
+
+    <string name="not_support_area">This area is not supported yet</string>
+    <string name="title_activity_find_address">Map</string>
+    <string name="service_not_available">Service not available ..check network connection</string>
+    <string name="no_address_found">No address found</string>
+    <string name="address_found">address found</string>
+    <string name="email">test@gmail.com</string>
+
+    <string name="rate_app_dis">How was your experience with us</string>
+    <string name="rating_dialog_maybe_later">Maybe later</string>
+    <string name="write_your_feedback_here">Write your feedback here…</string>
+    <string name="feedback">Feedback</string>
+    <string name="rate_new">Rate now</string>
+    <string name="feedback_send">Send</string>
+    <string name="rate_app">Rate App</string>
+    <string name="confirm_location">Confirm Location</string>
+    <string name="search_place">Search a place</string>
+    <string name="confirm_pickup">Confirm pickup</string>
+    <string name="confirm_dest">Confirm destination</string>
+    <string name="failed_select_location">failed to select location please try again</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="register">REGISTER</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <string name="signup_login_hint">Already have an account? Sign In</string>
+    <string name="login_signup_hint">Don\'t have an account? Sign Up</string>
+    <string name="login_name_hint">Name</string>
+    <string name="login_mobile_number_hint">Mobile Number</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+    <string name="landline"><u>+916380441566</u></string>
+    <string name="whatsapp"><u>+916380441566</u></string>
+    <string name="website"><u>http://metroz.in</u></string>
+
+</resources>

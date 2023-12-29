@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+
+        >
+
+        <HorizontalScrollView
+
+            android:id="@+id/horizontalScrollView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:scrollbars="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+                <GridView
+                    android:id="@+id/t_grid"
+                    android:layout_width="1000dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:columnWidth="190dp"
+                    android:focusable="false"
+                    android:gravity="center"
+
+                    android:horizontalSpacing="30dp"
+                    android:numColumns="auto_fit"
+                    android:rowCount="1"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="20dp" />
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
+
+
+

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    package="com.smiligenceUAT1.metrozcustomer">
+
+    <meta-data
+        android:name="com.google.android.geo.API_KEY"
+        android:value="AIzaSyDpsvgIXk27nIS9Zivz5W3VkHue4ow3cYg" />
+    <meta-data
+        android:name="com.razorpay.ApiKey"
+        android:value="rzp_test_XWVN0OX2MZxu0Z" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="com.example.mapdemo.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="com.example.barcodelibrary.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <dist:module dist:instant="true" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".Current_Location_Activity"
+            android:theme="@style/withoutWindowBarTheme"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".SellerWeeklyPaymentActivity"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DiscountActivity"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OnBoardScreenActivity"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChangeNewPasswordActivity"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/withoutWindowBarTheme" />
+        <activity
+            android:name=".ForgetPasswordActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:exported="true"
+            android:theme="@style/withoutWindowBarTheme" />
+        <activity
+            android:name=".Advertisementstoredetails"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NostoreAvailableactivity"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OtpVerificationActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:exported="true"
+            android:theme="@style/withoutWindowBarTheme" />
+        <activity
+            android:name=".PickupAndDroporderDetailsActivty"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PickAndDropActivity"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CustomersOrdersActivity"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FindAddressActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_find_address"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".CustomerProfileActivity"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SearchActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".FilterActivity"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ViewOrderActivity"
+            android:configChanges="orientation"
+            android:label="Order Details"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PaymentActivity"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddNewAddressActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="Add New Address"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".AddAddressActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="Add Address"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ViewCartActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ViewItemsActivity"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".StoreListActivity"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HomePageAcitivity"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginRegister"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/withoutWindowBarTheme" />
+        <activity
+            android:name=".LoginActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:exported="true"
+            android:theme="@style/withoutWindowBarTheme" />
+        <activity
+            android:name=".common.SplashActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:exported="true"
+            android:theme="@style/withoutWindowBarTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <service
+            android:name=".common.FetchAddressIntentService"
+
+            android:exported="true" />
+    </application>
+
+</manifest>
